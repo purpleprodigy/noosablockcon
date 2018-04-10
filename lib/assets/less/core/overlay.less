@@ -1,54 +1,3 @@
-// Name:            Overlay
-// Description:     Defines styles for image overlays
-//
-// Component:       `uk-overlay`
-//
-// Sub-objects:     `uk-overlay-panel`
-//                  `uk-overlay-hover`
-//                  `uk-overlay-active`
-//                  `uk-overlay-icon`
-//
-// Modifier:        `uk-overlay-background`
-//                  `uk-overlay-image`
-//                  `uk-overlay-top`
-//                  `uk-overlay-bottom`
-//                  `uk-overlay-left`
-//                  `uk-overlay-right`
-//                  `uk-overlay-fade`
-//                  `uk-overlay-scale`
-//                  `uk-overlay-spin`
-//                  `uk-overlay-grayscale`
-//                  `uk-overlay-slide-top`
-//                  `uk-overlay-slide-bottom`
-//                  `uk-overlay-slide-left`
-//                  `uk-overlay-slide-right`
-//
-// DEPRECATED:      `uk-overlay-area`
-//                  `uk-overlay-area-content`
-//                  `uk-overlay-caption`
-//                  `uk-overlay-toggle`
-//
-// States:          `uk-hover`
-//                  `uk-active`
-//                  `uk-ignore`
-//
-// Uses:            Icon: `[class*='uk-icon-']`
-//                  `uk-border-circle`
-//
-// Markup:
-//
-// <!-- uk-overlay -->
-// <figure class="uk-overlay" href="">
-//     <img src="" alt="">
-//     <figcaption class="uk-overlay-panel"></figcaption>
-// </figure>
-//
-// ========================================================================
-
-
-// Variables
-// ========================================================================
-
 @overlay-panel-padding:                         10px;
 @overlay-panel-color:                           @white;
 
@@ -59,7 +8,7 @@
 @overlay-icon-color:                            @white;
 
 @overlay-fade-in-opacity:                       1;
-@overlay-fade-out-opacity:                      0.7;
+@overlay-fade-out-opacity:                      0.9;
 
 @overlay-scale-in-scale:                        1.1;
 @overlay-scale-out-scale:                       1;
@@ -71,23 +20,6 @@
 
 @overlay-panel-link-color:                      inherit;
 @overlay-panel-link-text-decoration:            none;
-
-// DEPRECATED
-@overlay-area-background:                       rgba(0,0,0,0.3);
-
-@overlay-area-icon:                             "\f002";
-@overlay-area-icon-size:                        50px;
-@overlay-area-icon-color:                       @white;
-
-@overlay-area-content-font-size:                1rem;
-@overlay-area-content-padding-horizontal:       15px;
-@overlay-area-content-color:                    @white;
-@overlay-area-content-link-color:               inherit;
-
-@overlay-caption-background:                    rgba(0,0,0,0.5);
-@overlay-caption-padding:                       15px;
-@overlay-caption-color:                         @white;
-
 
 /* ========================================================================
    Component: Overlay
@@ -127,7 +59,7 @@
  * Remove margin from content
  */
 
-.uk-overlay > :first-child { margin-bottom: 0; }
+.uk-overlay > :first-child { margin-bottom: 150px; }
 
 
 /* Sub-object `uk-overlay-panel`
@@ -156,7 +88,7 @@
  */
 
 .uk-overlay-panel > :last-child,
-.uk-overlay-panel.uk-flex > * > :last-child { margin-bottom: 0; }
+.uk-overlay-panel.uk-flex > * > :last-child { margin-bottom: 10px; }
 
 /*
  * Keep color for headings if the default heading color is changed
